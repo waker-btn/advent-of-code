@@ -2,7 +2,7 @@ import fs from "fs";
 
 const input = fs.readFileSync("./input.txt", "utf-8");
 const sampleInput = fs.readFileSync("./sampleInput.txt", "utf-8");
-const wordsearch = sampleInput.split("\n").map((row) => row.split(""));
+const wordsearch = input.split("\n").map((row) => row.split(""));
 const word = ["M", "A", "S"];
 let count = 0;
 
@@ -22,6 +22,8 @@ function checkSurroundings(x, y) {
         case "S":
           if (wordsearch[y - 1][x - 1] !== "M") return;
           break;
+        default:
+          return;
       }
       switch (wordsearch[y - 1][x + 1]) {
         case "M":
@@ -30,12 +32,12 @@ function checkSurroundings(x, y) {
         case "S":
           if (wordsearch[y + 1][x - 1] !== "M") return;
           break;
+        default:
+          return;
       }
       return count++;
     }
   }
 }
-
-// hitting multiple cases??? added break, still wrong 
 
 console.log(count);

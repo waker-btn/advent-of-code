@@ -1,0 +1,24 @@
+{
+  "name": "advent-of-code",
+  "version": "1.0.0",
+  "description": "This repository contains my solutions for the [Advent of Code](https://adventofcode.com/) programming puzzles, organized by year and day.",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/waker-btn/advent-of-code.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/waker-btn/advent-of-code/issues"
+  },
+  "homepage": "https://github.com/waker-btn/advent-of-code#readme",
+  "devDependencies": {
+    "@types/node": "^24.10.1"
+  }
+}
